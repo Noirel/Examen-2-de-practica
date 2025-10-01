@@ -12,7 +12,7 @@ private:
 public:
     Motor();
     Motor(string, string, double);
-    
+    ~Motor();
     void virtual setMarca(string);
     void virtual setNumSerie(string);
     void virtual setPrecioM(double);

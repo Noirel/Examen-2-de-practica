@@ -8,6 +8,10 @@ Motor::Motor(string, string, double)
 {
 }
 
+Motor::~Motor()
+{
+}
+
 void Motor::setMarca(string)
 {
 }

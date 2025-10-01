@@ -5,11 +5,10 @@
 
 using namespace std;
 
-class mCombustible 
+class mCombustible : public mCDiesel, public mCGasolina
 {
-private:
-    
-
+protected:
+    string tipo;
 public:
     mCombustible();
     ~mCombustible();
