@@ -1,22 +1,18 @@
 #include <iostream>
 #include <sstream>
-#include "motor.h"
+#include "mCGasolina.h"
+#include "mCDiesel.h"
+
 using namespace std;
 
-class mCombustible : public Motor {0}
+class mCombustible 
 {
 private:
     
 
 public:
-    mCombustible(/* args */);
+    mCombustible();
     ~mCombustible();
 };
 
-mCombustible::mCombustible(/* args */)
-{
-}
 
-mCombustible::~mCombustible()
-{
-}
