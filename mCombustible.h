@@ -1,9 +1,9 @@
 #include <iostream>
 #include <sstream>
-#include 
+#include "motor.h"
 using namespace std;
 
-class mCombustible : public
+class mCombustible : public Motor {0}
 {
 private:
     
