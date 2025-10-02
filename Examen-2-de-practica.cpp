@@ -55,6 +55,6 @@ int main(){
     else{
         cout<<"Opcion no valida"<<endl;
     }
-    
+    system("pause");
     return 0;
 }
