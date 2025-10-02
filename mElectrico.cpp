@@ -1,11 +1,11 @@
 #include "mElectrico.h"
 
-mElectrico::mElectrico()
+mElectrico::mElectrico() : Motor()
 {
     this->amperage=0.0;
 }
 
-mElectrico::mElectrico(float amperage)
+mElectrico::mElectrico(float amperage, string marca, string numSerie, double precioM) : Motor(marca, numSerie, precioM)
 {
     this->amperage=amperage;
 }

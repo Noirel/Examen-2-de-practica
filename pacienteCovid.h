@@ -4,19 +4,23 @@ using namespace std;
 
 class pacienteCovid: public Fecha
 {
-private:
+protected:
     int cedula;
     string nombre;
+    string telefono;
+    int numComirbilidades;
     
 public:
-    pacienteCovid(/* args */);
+    pacienteCovid(int, string, string, int);
     ~pacienteCovid();
+
+    void setCedula(int);
+    void setNombre(string);
+    void setTelefono(string);
+    void setNumComorbilidades(int);
+    int getCedula();
+    string getNombre();
+    string getTelefono();
+    int getNumComorbilidades();
+
 };
-
-pacienteCovid::pacienteCovid(/* args */)
-{
-}
-
-pacienteCovid::~pacienteCovid()
-{
-}

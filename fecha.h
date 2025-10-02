@@ -11,7 +11,7 @@ private:
     int anio;
 public:
 
-    fecha(/* args */);
+    fecha(int, int, int);
     ~fecha();
 
     void setDia(int);
@@ -20,5 +20,6 @@ public:
     int getDia();
     int getMes();
     int getAnio();
+    bool fechaMayor(fecha*);
 };
 

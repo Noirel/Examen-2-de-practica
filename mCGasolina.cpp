@@ -2,18 +2,24 @@
 
 mCGasolina::mCGasolina()
 {
+    this->octanaje=0.0;
+}
+
+mCGasolina::mCGasolina(string marca, string numSerie, double precio, string tipo, float octanaje) : mCombustible(marca, numSerie, precio, tipo)
+{
+    this->octanaje=octanaje;
 }
 
 mCGasolina::~mCGasolina()
 {
 }
 
-void mCGasolina::setoctanaje(float octanaje)
+void mCGasolina::setOctanaje(float octanaje)
 {
     this->octanaje=octanaje;
 }
 
-float mCGasolina::getoctanaje()
+float mCGasolina::getOctanaje()
 {
-    return 0.0f;
+    return octanaje;
 }

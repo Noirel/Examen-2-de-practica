@@ -1,14 +1,12 @@
 #include <iostream>
-#include "mCombustible.h"
-#include "mElectrico.h"
+#include <sstream>
 using namespace std;
 
-class Motor : public mCombustible{
-private:
+class Motor{
+protected:
     string marca;
     string numSerie;
     double precioM;
-    mElectrico mElectrico;
 public:
     Motor();
     Motor(string, string, double);

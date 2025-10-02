@@ -1,17 +1,20 @@
 #include <iostream>
 #include <sstream>
-#include "mCGasolina.h"
-#include "mCDiesel.h"
+#include "Motor.h"
 
 using namespace std;
 
-class mCombustible : public mCDiesel, public mCGasolina
+class mCombustible : public Motor
 {
 protected:
     string tipo;
 public:
     mCombustible();
-    ~mCombustible();
+    mCombustible(string, string, double, string);
+    virtual ~mCombustible();
+    void setTipo(string);
+    string getTipo();
+    string toString();
 };
 
 

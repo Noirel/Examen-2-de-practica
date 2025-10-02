@@ -2,44 +2,57 @@
 
 Motor::Motor()
 {
+    this->marca="N/A";
+    this->numSerie="N/A";
+    this->precioM=0.0;
 }
 
-Motor::Motor(string, string, double)
+Motor::Motor(string marca, string numSerie, double precioM)
 {
+    this->marca=marca;
+    this->numSerie=numSerie;
+    this->precioM=precioM;
 }
 
 Motor::~Motor()
 {
 }
 
-void Motor::setMarca(string)
+void Motor::setMarca(string marca)
 {
+    this->marca=marca;
 }
 
-void Motor::setNumSerie(string)
+void Motor::setNumSerie(string numSerie)
 {
+    this->numSerie=numSerie;
 }
 
-void Motor::setPrecioM(double)
+void Motor::setPrecioM(double precioM)
 {
+    this->precioM=precioM;
 }
 
 string Motor::getMarca()
 {
-return string();
+    return marca;
 }
 
 string Motor::getNumSerie()
 {
-return string();
+    return numSerie;
 }
 
 double Motor::getPrecioM()
 {
-return 0.0;
+    return precioM;
 }
 
 string Motor::toString()
 {
-return string();
+    stringstream s;
+    s<<"Marca: "<<getMarca()<<endl;
+    s<<"Numero de Serie: "<<getNumSerie()<<endl;
+    s<<"Precio: "<<getPrecioM()<<endl;
+return s.str();
 }
