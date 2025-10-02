@@ -10,6 +10,10 @@ mElectrico::mElectrico(float amperage, string marca, string numSerie, double pre
     this->amperage=amperage;
 }
 
+mElectrico::~mElectrico()
+{
+}
+
 void mElectrico::setAmperage(float amperage)
 {
     this->amperage=amperage;

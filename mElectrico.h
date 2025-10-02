@@ -10,6 +10,7 @@ private:
 public:
     mElectrico();
     mElectrico(float, string, string, double);
+    ~mElectrico();
     void setAmperage(float);
     float getAmperage();
     string toString();

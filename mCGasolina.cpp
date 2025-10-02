@@ -23,3 +23,9 @@ float mCGasolina::getOctanaje()
 {
     return octanaje;
 }
+string mCGasolina::toString()
+{
+    stringstream s;
+    s << "Octanaje: " << getOctanaje() << endl;
+    return s.str();
+}

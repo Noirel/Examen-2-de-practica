@@ -4,7 +4,7 @@
 using namespace std;
 
 class Motor{
-protected:
+private:
     string marca;
     string numSerie;
     double precioM;

@@ -15,4 +15,5 @@ public:
     ~mCDiesel();
     void setPotencia(float);
     float getPotencia();
+    string toString();
 };

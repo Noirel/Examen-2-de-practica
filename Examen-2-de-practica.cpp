@@ -1,4 +1,5 @@
 #include <iostream>
+#include "Motor.h"
 #include "mCDiesel.h"
 #include "mElectrico.h"
 #include "mCGasolina.h"
@@ -7,6 +8,7 @@ using namespace std;
 
 int main(){
     
+    Motor motor;
     mCDiesel diesel1;
     mElectrico electrico1;
     mCGasolina gasolina1;

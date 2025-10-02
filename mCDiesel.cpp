@@ -1,14 +1,9 @@
 #include "mCDiesel.h"
 
-mCDiesel::mCDiesel()
-{
-    this->potencia=0.0;
-}
+mCDiesel::mCDiesel() : mCombustible(), potencia(0.0f) {}
 
-mCDiesel::mCDiesel(string marca, string numSerie, double precio, string tipo, float potencia) : mCombustible(marca, numSerie, precio, tipo)
-{
-    this->potencia=potencia;
-}
+mCDiesel::mCDiesel(string marca, string numSerie, double precio, string tipo, float potencia) : mCombustible(marca, numSerie, precio, tipo), potencia(potencia)
+{}
 mCDiesel::~mCDiesel()
 {
 }
@@ -21,4 +16,10 @@ void mCDiesel::setPotencia(float potencia)
 float mCDiesel::getPotencia()
 {
     return potencia;
+}
+string mCDiesel::toString()
+{
+    stringstream s;
+    s << "Potencia: " << getPotencia() << " HP" << endl;
+    return s.str();
 }

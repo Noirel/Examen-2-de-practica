@@ -15,5 +15,6 @@ public:
     ~mCGasolina();
     void setOctanaje(float);
     float getOctanaje();
+    string toString();
 };
 
