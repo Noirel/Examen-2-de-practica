@@ -1,5 +1,5 @@
 #include <iostream>
-#include <sstring>
+#include <sstream>
 #include "pacienteCovid.h"
 
 using namespace std;

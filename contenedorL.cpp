@@ -3,7 +3,9 @@
 ContenedorL::ContenedorL() : siguiente(nullptr) {}
 
 
-ContenedorL::~ContenedorL() {}
+ContenedorL::~ContenedorL() {
+    delete[] siguiente;
+}
 
 ContenedorL* ContenedorL::getSiguiente() {
     return siguiente;

@@ -1,12 +1,20 @@
 #include "fecha.h"
 
-Fecha::Fecha(int d, int m, int a){
+fecha::fecha(){
+
+    this-> dia = 0;
+    this-> mes = 0;
+    this-> anio = 0;
+
+}
+
+fecha::fecha(int d, int m, int a){
     this-> dia = d;
     this-> mes = m;
     this-> anio = a;
 }
 
-Fecha::~Fecha(){
+fecha::~fecha(){
 
 }
 
@@ -37,9 +45,12 @@ int fecha::getAnio() {
 }
 
 bool fecha::fechaMayor(fecha* otraFecha) {
-    if (anio > otraFecha->getAnio()) return true;
-    if (anio == otraFecha->getAnio() && mes > otraFecha->getMes()) return true;
-    if (anio == otraFecha->getAnio() && mes == otraFecha->getMes() && dia > otraFecha->getDia()) return true;
-    return false;
+    if (anio > otraFecha->getAnio())
+        return true;
+    if (anio == otraFecha->getAnio() && mes > otraFecha->getMes())
+        return true;
+    if (anio == otraFecha->getAnio() && mes == otraFecha->getMes() && dia > otraFecha->getDia())
+        return true;
+        return false;
 }
 

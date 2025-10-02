@@ -1,13 +1,20 @@
 #include <iostream>
+#include "mCDiesel.h"
+#include "mElectrico.h"
+#include "mCGasolina.h"
+
 using namespace std;
 
 int main(){
     
-    mCDiesel diesel1(500);
-    mElectrico electrico1(300);
-    mCGasolina gasolina1(400);
+    mCDiesel diesel1;
+    mElectrico electrico1;
+    mCGasolina gasolina1;
     electrico1.setAmperage(1.5);
-    gasolina1.setoctonaje(90);
+    gasolina1.setOctanaje(90);
     diesel1.setPotencia(180);
+    cout<<electrico1.toString()<<endl;
+    cout<<gasolina1.toString()<<endl;
+    cout<<diesel1.toString()<<endl;
     
 }

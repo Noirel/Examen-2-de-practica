@@ -9,8 +9,10 @@ private:
     int dia;
     int mes;
     int anio;
+
 public:
 
+    fecha();
     fecha(int, int, int);
     ~fecha();
 
@@ -21,5 +23,6 @@ public:
     int getMes();
     int getAnio();
     bool fechaMayor(fecha*);
+    
 };
 

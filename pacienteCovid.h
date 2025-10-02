@@ -1,16 +1,18 @@
 #include <iostream>
 #include <sstream>
+#include "fecha.h"
 using namespace std;
 
-class pacienteCovid: public Fecha
+class pacienteCovid: public fecha
 {
 protected:
     int cedula;
     string nombre;
     string telefono;
-    int numComirbilidades;
+    int numComorbilidades;
     
 public:
+    pacienteCovid();
     pacienteCovid(int, string, string, int);
     ~pacienteCovid();
 

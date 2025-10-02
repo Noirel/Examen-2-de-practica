@@ -1,13 +1,20 @@
 #include "pacienteCovid.h"
 
+pacienteCovid::pacienteCovid()
+{
+    this->cedula = 0;
+    this->nombre = "N/A";
+    this->telefono = "N/A";
+    this->numComorbilidades = 0;
+}
 
-pacienteCovid::pacienteCovid(int c, string n, string t, int numC) {
+pacienteCovid::pacienteCovid(int c, string n, string t, int numC)
+{
     this->cedula = c;
     this->nombre = n;
     this->telefono = t;
     this->numComorbilidades = numC;
 }
-
 
 pacienteCovid::~pacienteCovid() {
     
