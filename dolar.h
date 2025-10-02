@@ -1,17 +1,20 @@
 #pragma once
 #include <iostream>
 #include <sstream>
-#include "tipoCambio.h"
+#include "moneda.h"
 using namespace std;
 
-class dolar : public moneda
-{
+class dolar : public moneda {
 private:
-    
+    float cant;
 public:
-    dolar(/* args */);
+    dolar();
+    dolar(float);
     ~dolar();
+    void setCant(float cant);
+    float getCant();
+    
 
-    double conversionDolar(tipoCambio);
+    double conversion(tipoCambio* TC);
 };
 

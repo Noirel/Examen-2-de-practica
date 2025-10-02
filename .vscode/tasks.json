@@ -6,14 +6,24 @@
 			"label": "C/C++: g++.exe build active file",
 			"command": "C:\\msys64\\ucrt64\\bin\\g++.exe",
 			"args": [
-				"-fdiagnostics-color=always",
-				"-g",
-				"${file}",
+				"Examen-2-de-practica.cpp",
+				"colon.cpp",
+				"contenedorL.cpp",
+				"dolar.cpp",
+				"fecha.cpp",
+				"mCDiesel.cpp",
+				"mCGasolina.cpp",
+				"mCombustible.cpp",
+				"mElectrico.cpp",
+				"Motor.cpp",
+				"pacienteCovid.cpp",
+				"moneda.cpp",
+				"tipoCambio.cpp",
 				"-o",
-				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+				"Examen-2-de-practica.exe"
 			],
 			"options": {
-				"cwd": "C:\\msys64\\ucrt64\\bin"
+				"cwd": ""
 			},
 			"problemMatcher": [
 				"$gcc"
